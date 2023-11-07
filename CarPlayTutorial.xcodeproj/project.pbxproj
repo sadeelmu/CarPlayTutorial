@@ -16,6 +16,8 @@
 		122BEB512AF93107000744D5 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */; };
 		122BEB542AF93909000744D5 /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122BEB532AF93909000744D5 /* CarPlay.framework */; };
 		12535E8E2AFA818800876AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12535E8D2AFA818700876AD6 /* Assets.xcassets */; };
+		12535E902AFA84E200876AD6 /* RadioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */; };
+		12535E922AFA851C00876AD6 /* RadioListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E912AFA851C00876AD6 /* RadioListCell.swift */; };
 		12566B592AFA287A005CD267 /* radios.json in Resources */ = {isa = PBXBuildFile; fileRef = 12566B582AFA287A005CD267 /* radios.json */; };
 		12566B5B2AFA28A5005CD267 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12566B5A2AFA28A5005CD267 /* Radio.swift */; };
 		12566B5D2AFA2912005CD267 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12566B5C2AFA2912005CD267 /* DataManager.swift */; };
@@ -34,6 +36,8 @@
 		122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		122BEB532AF93909000744D5 /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
 		12535E8D2AFA818700876AD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../../Downloads/CarPlayTutorial-master/CarPlayTutorial/Assets.xcassets"; sourceTree = "<group>"; };
+		12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListViewController.swift; sourceTree = "<group>"; };
+		12535E912AFA851C00876AD6 /* RadioListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListCell.swift; sourceTree = "<group>"; };
 		12566B582AFA287A005CD267 /* radios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = radios.json; path = ../../../../../../Downloads/radios.json; sourceTree = "<group>"; };
 		12566B5A2AFA28A5005CD267 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 		12566B5C2AFA2912005CD267 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */,
 				12566B5A2AFA28A5005CD267 /* Radio.swift */,
 				12566B5C2AFA2912005CD267 /* DataManager.swift */,
+				12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */,
+				12535E912AFA851C00876AD6 /* RadioListCell.swift */,
 			);
 			path = CarPlayTutorial;
 			sourceTree = "<group>";
@@ -169,6 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12535E902AFA84E200876AD6 /* RadioListViewController.swift in Sources */,
+				12535E922AFA851C00876AD6 /* RadioListCell.swift in Sources */,
 				12566B5B2AFA28A5005CD267 /* Radio.swift in Sources */,
 				12566B5D2AFA2912005CD267 /* DataManager.swift in Sources */,
 				122BEB3C2AF92C49000744D5 /* ViewController.swift in Sources */,
