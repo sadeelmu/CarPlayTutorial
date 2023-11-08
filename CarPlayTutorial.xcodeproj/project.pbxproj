@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		122BEB382AF92C49000744D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEB372AF92C49000744D5 /* AppDelegate.swift */; };
 		122BEB3A2AF92C49000744D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEB392AF92C49000744D5 /* SceneDelegate.swift */; };
-		122BEB3C2AF92C49000744D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEB3B2AF92C49000744D5 /* ViewController.swift */; };
 		122BEB3F2AF92C49000744D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEB3D2AF92C49000744D5 /* Main.storyboard */; };
 		122BEB412AF92C4B000744D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122BEB402AF92C4B000744D5 /* Assets.xcassets */; };
 		122BEB442AF92C4B000744D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEB422AF92C4B000744D5 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		12535E902AFA84E200876AD6 /* RadioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */; };
 		12535E992AFB855000876AD6 /* RadioListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E972AFB855000876AD6 /* RadioListCell.swift */; };
 		12535E9A2AFB855000876AD6 /* RadioListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12535E982AFB855000876AD6 /* RadioListCell.xib */; };
+		12535E9C2AFBC82C00876AD6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E9B2AFBC82C00876AD6 /* Notification.swift */; };
 		12566B592AFA287A005CD267 /* radios.json in Resources */ = {isa = PBXBuildFile; fileRef = 12566B582AFA287A005CD267 /* radios.json */; };
 		12566B5B2AFA28A5005CD267 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12566B5A2AFA28A5005CD267 /* Radio.swift */; };
 		12566B5D2AFA2912005CD267 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12566B5C2AFA2912005CD267 /* DataManager.swift */; };
@@ -27,7 +27,6 @@
 		122BEB342AF92C49000744D5 /* CarPlayTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPlayTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		122BEB372AF92C49000744D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122BEB392AF92C49000744D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		122BEB3B2AF92C49000744D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		122BEB3E2AF92C49000744D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		122BEB402AF92C4B000744D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		122BEB432AF92C4B000744D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListViewController.swift; sourceTree = "<group>"; };
 		12535E972AFB855000876AD6 /* RadioListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListCell.swift; sourceTree = "<group>"; };
 		12535E982AFB855000876AD6 /* RadioListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioListCell.xib; sourceTree = "<group>"; };
+		12535E9B2AFBC82C00876AD6 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		12566B582AFA287A005CD267 /* radios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = radios.json; path = ../../../../../../Downloads/radios.json; sourceTree = "<group>"; };
 		12566B5A2AFA28A5005CD267 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 		12566B5C2AFA2912005CD267 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -79,7 +79,6 @@
 				12566B582AFA287A005CD267 /* radios.json */,
 				122BEB372AF92C49000744D5 /* AppDelegate.swift */,
 				122BEB392AF92C49000744D5 /* SceneDelegate.swift */,
-				122BEB3B2AF92C49000744D5 /* ViewController.swift */,
 				122BEB3D2AF92C49000744D5 /* Main.storyboard */,
 				122BEB402AF92C4B000744D5 /* Assets.xcassets */,
 				122BEB422AF92C4B000744D5 /* LaunchScreen.storyboard */,
@@ -90,6 +89,7 @@
 				12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */,
 				12535E972AFB855000876AD6 /* RadioListCell.swift */,
 				12535E982AFB855000876AD6 /* RadioListCell.xib */,
+				12535E9B2AFBC82C00876AD6 /* Notification.swift */,
 			);
 			path = CarPlayTutorial;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 			files = (
 				12535E902AFA84E200876AD6 /* RadioListViewController.swift in Sources */,
 				12535E992AFB855000876AD6 /* RadioListCell.swift in Sources */,
+				12535E9C2AFBC82C00876AD6 /* Notification.swift in Sources */,
 				12566B5B2AFA28A5005CD267 /* Radio.swift in Sources */,
 				12566B5D2AFA2912005CD267 /* DataManager.swift in Sources */,
-				122BEB3C2AF92C49000744D5 /* ViewController.swift in Sources */,
 				122BEB382AF92C49000744D5 /* AppDelegate.swift in Sources */,
 				122BEB512AF93107000744D5 /* CarPlaySceneDelegate.swift in Sources */,
 				122BEB3A2AF92C49000744D5 /* SceneDelegate.swift in Sources */,

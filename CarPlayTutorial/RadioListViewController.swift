@@ -19,8 +19,10 @@ class RadioListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Nib Cells
         tableView.register(UINib(nibName: "RadioListCell", bundle: Bundle.main), forCellReuseIdentifier: "RadioListCell")
         
+        //Notifications
         NotificationCenter.default.addObserver(forName: .updateFavoriteRadiosNotification, object: nil, queue: nil) { [weak self] _ in
             guard let strongSelf = self else { return }
             strongSelf.getRadios()
