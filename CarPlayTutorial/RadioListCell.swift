@@ -9,6 +9,17 @@ import Foundation
 import UIKit
 
 class RadioListCell: UITableViewCell {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
     
     var currentRadio: Radio? = nil
 
@@ -37,6 +48,7 @@ class RadioListCell: UITableViewCell {
     }
     
     @IBAction func favorite(button: UIButton) {
+        
         guard let radio = currentRadio else { return }
         if button.isSelected == true {
             button.isSelected = false
