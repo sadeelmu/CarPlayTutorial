@@ -34,6 +34,7 @@
 		122BEB4D2AF92E9E000744D5 /* CarPlayTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarPlayTutorial.entitlements; sourceTree = "<group>"; };
 		122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		122BEB532AF93909000744D5 /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
+		124577662AFD043700DA3E69 /* radios.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = radios.json; sourceTree = "<group>"; };
 		12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListViewController.swift; sourceTree = "<group>"; };
 		12535E972AFB855000876AD6 /* RadioListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListCell.swift; sourceTree = "<group>"; };
 		12535E982AFB855000876AD6 /* RadioListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioListCell.xib; sourceTree = "<group>"; };
@@ -84,12 +85,11 @@
 				122BEB422AF92C4B000744D5 /* LaunchScreen.storyboard */,
 				122BEB452AF92C4B000744D5 /* Info.plist */,
 				122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */,
-				12566B5A2AFA28A5005CD267 /* Radio.swift */,
-				12566B5C2AFA2912005CD267 /* DataManager.swift */,
+				124577682AFD046000DA3E69 /* Data */,
 				12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */,
 				12535E972AFB855000876AD6 /* RadioListCell.swift */,
 				12535E982AFB855000876AD6 /* RadioListCell.xib */,
-				12535E9B2AFBC82C00876AD6 /* Notification.swift */,
+				124577672AFD044500DA3E69 /* Utilities */,
 			);
 			path = CarPlayTutorial;
 			sourceTree = "<group>";
@@ -100,6 +100,24 @@
 				122BEB532AF93909000744D5 /* CarPlay.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		124577672AFD044500DA3E69 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				12535E9B2AFBC82C00876AD6 /* Notification.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		124577682AFD046000DA3E69 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				12566B5C2AFA2912005CD267 /* DataManager.swift */,
+				124577662AFD043700DA3E69 /* radios.json */,
+				12566B5A2AFA28A5005CD267 /* Radio.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

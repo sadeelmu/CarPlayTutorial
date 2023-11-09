@@ -59,6 +59,7 @@ class RadioListCell: UITableViewCell {
         }
         DataManager.shared.updateFavoriteRadios(radio: radio)
         
+        //maintain a favorite radios list inside the DataManager.
         NotificationCenter.default.post(name: .updateFavoriteRadiosNotification, object: nil)
     }
     

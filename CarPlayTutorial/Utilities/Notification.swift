@@ -7,6 +7,6 @@
 
 import Foundation
 
-extension Notification name{
+extension Notification.Name{
     static let updateFavoriteRadiosNotification = Notification.Name ("updateFavoriteRadiosNotification")
 }
