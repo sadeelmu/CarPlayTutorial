@@ -10,7 +10,7 @@ import UIKit
 
 class RadioListCell: UITableViewCell {
 
-    var currentRadio: Radio? = nil
+    var currentRadio: Radio? = nil // I'd not advise business logic here, I suggest use IndexPath to have track of which radio was selected
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
@@ -30,14 +30,17 @@ class RadioListCell: UITableViewCell {
         titleLabel.text = radio.title
         subtitleLabel.text = radio.subtitle
         radioImageView.image = UIImage(named: radio.imageUrl)
-        
+
+
+        // I'd advise sending the bool value isFavorite here instead of having the logic in a View layer
         let favoriteImage = DataManager.shared.favoriteRadios.contains(where: {$0.uid == radio.uid}) ? UIImage(named: "favorite") : UIImage(named: "favorite_border")
         favoriteButton.setImage(favoriteImage, for: .normal)
         favoriteButton.isSelected = DataManager.shared.favoriteRadios.contains(where: {$0.uid == radio.uid})
     }
     
     @IBAction func favorite(button: UIButton) {
-        
+
+        //here we can setup a delegate to update the view controller instead of working on the logic here
         guard let radio = currentRadio else { return }
         if button.isSelected == true {
             button.isSelected = false
