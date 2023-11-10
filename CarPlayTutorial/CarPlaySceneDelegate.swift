@@ -11,12 +11,13 @@ import CarPlay
 
 class CarPlaySceneDelegate: UIResponder{
     
+    //our properties
     var interfaceController: CPInterfaceController?
     var radios = [Radio]()
     let radioListTemplate: CPListTemplate = CPListTemplate(title: "Radios", sections: [])
     let favoriteRadiosListTemplate: CPListTemplate = CPListTemplate(title: "Favorites", sections: [])
     
-    
+    //method to update the list according to favorites
     func updateRadioList(onlyWithFavorites:Bool) -> CPListSection{
         var radioItems = [CPListItem]()
         for radio in (onlyWithFavorites ? DataManager.shared.favoriteRadios : radios){
@@ -32,6 +33,7 @@ class CarPlaySceneDelegate: UIResponder{
         return CPListSection(items: radioItems)
     }
     
+    //method to bring up alert when user interacts with favorites
     func favoriteAlert(radio: Radio, completion: @escaping () -> Void) {
         let okAlertAction: CPAlertAction = CPAlertAction(title: "Ok", style: .default) { _ in
             DataManager.shared.updateFavoriteRadios(radio: radio)
@@ -43,18 +45,6 @@ class CarPlaySceneDelegate: UIResponder{
         self.interfaceController?.presentTemplate(alertTemplate, animated: true, completion: { _, _ in
             completion()
         })
-    }
-    
-    func application(_ application:UIApplication, configurationForConnection connectingScenceSession:UISceneSession, options:UIScene.ConnectionOptions) -> UISceneConfiguration{
-        
-        if(connectingScenceSession.role == UISceneSession.Role.carTemplateApplication){
-            let scene = UISceneConfiguration(name: "CarPlay", sessionRole: connectingScenceSession.role)
-            scene.delegateClass = CarPlaySceneDelegate.self
-            return scene
-        }
-        else {
-            return UISceneConfiguration(name:"Default Configuration", sessionRole: connectingScenceSession.role)
-        }
     }
 }
 
