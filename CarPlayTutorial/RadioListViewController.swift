@@ -27,6 +27,7 @@ class RadioListViewController: UIViewController {
             guard let strongSelf = self else { return }
             strongSelf.getRadios()
         }
+        //first time loading
         getRadios()
     }
     

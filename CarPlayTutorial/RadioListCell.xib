@@ -37,6 +37,9 @@
                         </accessibility>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="favorite_border"/>
+                        <connections>
+                            <action selector="favoriteWithButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="H8k-Hw-f3e"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iuk-iN-gKg" userLabel="Subtitle Label">
                         <rect key="frame" x="159" y="30" width="44" height="15"/>
@@ -49,6 +52,12 @@
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favoriteButton" destination="0L2-Eo-RN3" id="0MY-pa-U3I"/>
+                <outlet property="radioImageView" destination="B8I-qr-xg4" id="GRm-z7-yVB"/>
+                <outlet property="subtitleLabel" destination="iuk-iN-gKg" id="Da7-dM-TNh"/>
+                <outlet property="titleLabel" destination="w5i-KQ-OBq" id="3TC-7u-727"/>
+            </connections>
             <point key="canvasLocation" x="32.061068702290072" y="20.422535211267608"/>
         </tableViewCell>
     </objects>

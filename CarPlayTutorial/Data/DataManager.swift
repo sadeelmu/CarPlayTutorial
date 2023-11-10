@@ -14,11 +14,11 @@ class DataManager{
     
     func getRadios(completionHandler: ([Radio]?) -> Void){
         var radios = [Radio]()
-        do{
+        do {
             let data = try Data(contentsOf: Bundle.main.url(forResource: "radios", withExtension: "json")!)
             radios = try JSONDecoder().decode([Radio].self, from: data)
             return completionHandler(radios)
-        }catch{
+        } catch{
             print("getRadios() error", error)
             return completionHandler(nil)
         }

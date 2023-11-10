@@ -11,6 +11,10 @@ import CarPlay
 class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
     
     var interfaceController: CPInterfaceController?
+    var radios = [Radio]()
+    let radioListTemplate: CPListTemplate = CPListTemplate(title: "Radios", sections: [])
+    let favoriteRadiosListTemplate: CPListTemplate = CPListTemplate(title: "Favorites", sections: [])
+    
     
     func templateApplicationScene(_ templateApplicationScene: CPTemplateApplicationScene, didConnect interfaceController: CPInterfaceController) {
         self.interfaceController = interfaceController

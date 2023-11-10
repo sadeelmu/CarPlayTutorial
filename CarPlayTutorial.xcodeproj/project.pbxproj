@@ -14,11 +14,11 @@
 		122BEB442AF92C4B000744D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122BEB422AF92C4B000744D5 /* LaunchScreen.storyboard */; };
 		122BEB512AF93107000744D5 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */; };
 		122BEB542AF93909000744D5 /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122BEB532AF93909000744D5 /* CarPlay.framework */; };
+		124577732AFE06D300DA3E69 /* radios.json in Resources */ = {isa = PBXBuildFile; fileRef = 124577662AFD043700DA3E69 /* radios.json */; };
 		12535E902AFA84E200876AD6 /* RadioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */; };
 		12535E992AFB855000876AD6 /* RadioListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E972AFB855000876AD6 /* RadioListCell.swift */; };
 		12535E9A2AFB855000876AD6 /* RadioListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12535E982AFB855000876AD6 /* RadioListCell.xib */; };
 		12535E9C2AFBC82C00876AD6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E9B2AFBC82C00876AD6 /* Notification.swift */; };
-		12566B592AFA287A005CD267 /* radios.json in Resources */ = {isa = PBXBuildFile; fileRef = 12566B582AFA287A005CD267 /* radios.json */; };
 		12566B5B2AFA28A5005CD267 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12566B5A2AFA28A5005CD267 /* Radio.swift */; };
 		12566B5D2AFA2912005CD267 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12566B5C2AFA2912005CD267 /* DataManager.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +39,6 @@
 		12535E972AFB855000876AD6 /* RadioListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListCell.swift; sourceTree = "<group>"; };
 		12535E982AFB855000876AD6 /* RadioListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioListCell.xib; sourceTree = "<group>"; };
 		12535E9B2AFBC82C00876AD6 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		12566B582AFA287A005CD267 /* radios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = radios.json; path = ../../../../../../Downloads/radios.json; sourceTree = "<group>"; };
 		12566B5A2AFA28A5005CD267 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 		12566B5C2AFA2912005CD267 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,19 +76,18 @@
 		122BEB362AF92C49000744D5 /* CarPlayTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				12566B582AFA287A005CD267 /* radios.json */,
 				122BEB372AF92C49000744D5 /* AppDelegate.swift */,
 				122BEB392AF92C49000744D5 /* SceneDelegate.swift */,
-				122BEB3D2AF92C49000744D5 /* Main.storyboard */,
-				122BEB402AF92C4B000744D5 /* Assets.xcassets */,
-				122BEB422AF92C4B000744D5 /* LaunchScreen.storyboard */,
-				122BEB452AF92C4B000744D5 /* Info.plist */,
 				122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */,
-				124577682AFD046000DA3E69 /* Data */,
-				12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */,
-				12535E972AFB855000876AD6 /* RadioListCell.swift */,
+				122BEB3D2AF92C49000744D5 /* Main.storyboard */,
+				122BEB422AF92C4B000744D5 /* LaunchScreen.storyboard */,
 				12535E982AFB855000876AD6 /* RadioListCell.xib */,
+				12535E972AFB855000876AD6 /* RadioListCell.swift */,
+				12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */,
 				124577672AFD044500DA3E69 /* Utilities */,
+				124577742AFE06E900DA3E69 /* Data */,
+				122BEB402AF92C4B000744D5 /* Assets.xcassets */,
+				122BEB452AF92C4B000744D5 /* Info.plist */,
 			);
 			path = CarPlayTutorial;
 			sourceTree = "<group>";
@@ -110,12 +108,12 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		124577682AFD046000DA3E69 /* Data */ = {
+		124577742AFE06E900DA3E69 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				12566B5A2AFA28A5005CD267 /* Radio.swift */,
 				12566B5C2AFA2912005CD267 /* DataManager.swift */,
 				124577662AFD043700DA3E69 /* radios.json */,
-				12566B5A2AFA28A5005CD267 /* Radio.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -179,9 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				122BEB442AF92C4B000744D5 /* LaunchScreen.storyboard in Resources */,
-				12566B592AFA287A005CD267 /* radios.json in Resources */,
 				122BEB412AF92C4B000744D5 /* Assets.xcassets in Resources */,
 				122BEB3F2AF92C49000744D5 /* Main.storyboard in Resources */,
+				124577732AFE06D300DA3E69 /* radios.json in Resources */,
 				12535E9A2AFB855000876AD6 /* RadioListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
