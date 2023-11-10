@@ -32,6 +32,9 @@ class RadioListViewController: UIViewController {
     }
     
     func getRadios() {
+
+        //introduce a presenter/presentation layer which handles the communication with business layer
+        // read about view models or MVVM
         DataManager.shared.getRadios(completionHandler: { currentRadios in
             self.radios = currentRadios ?? []
             tableView.reloadData()
