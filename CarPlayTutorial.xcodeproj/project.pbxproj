@@ -21,6 +21,8 @@
 		12535E9C2AFBC82C00876AD6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12535E9B2AFBC82C00876AD6 /* Notification.swift */; };
 		12566B5B2AFA28A5005CD267 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12566B5A2AFA28A5005CD267 /* Radio.swift */; };
 		12566B5D2AFA2912005CD267 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12566B5C2AFA2912005CD267 /* DataManager.swift */; };
+		7002A3992B022C77003DE179 /* RadioListPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7002A3982B022C77003DE179 /* RadioListPresent.swift */; };
+		7002A3A02B023706003DE179 /* RadioListCellUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7002A39F2B023706003DE179 /* RadioListCellUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		12535E9B2AFBC82C00876AD6 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		12566B5A2AFA28A5005CD267 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 		12566B5C2AFA2912005CD267 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7002A3982B022C77003DE179 /* RadioListPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListPresent.swift; sourceTree = "<group>"; };
+		7002A39F2B023706003DE179 /* RadioListCellUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListCellUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +80,12 @@
 		122BEB362AF92C49000744D5 /* CarPlayTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				122BEB372AF92C49000744D5 /* AppDelegate.swift */,
-				122BEB392AF92C49000744D5 /* SceneDelegate.swift */,
-				122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */,
+				7002A3A12B023748003DE179 /* Delegates */,
 				122BEB3D2AF92C49000744D5 /* Main.storyboard */,
 				122BEB422AF92C4B000744D5 /* LaunchScreen.storyboard */,
 				12535E982AFB855000876AD6 /* RadioListCell.xib */,
-				12535E972AFB855000876AD6 /* RadioListCell.swift */,
-				12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */,
+				7002A3A22B0240D8003DE179 /* Presentation */,
+				7002A39C2B0236B8003DE179 /* View */,
 				124577672AFD044500DA3E69 /* Utilities */,
 				124577742AFE06E900DA3E69 /* Data */,
 				122BEB402AF92C4B000744D5 /* Assets.xcassets */,
@@ -116,6 +118,34 @@
 				124577662AFD043700DA3E69 /* radios.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		7002A39C2B0236B8003DE179 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12535E8F2AFA84E200876AD6 /* RadioListViewController.swift */,
+				12535E972AFB855000876AD6 /* RadioListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7002A3A12B023748003DE179 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				122BEB372AF92C49000744D5 /* AppDelegate.swift */,
+				122BEB392AF92C49000744D5 /* SceneDelegate.swift */,
+				122BEB502AF93107000744D5 /* CarPlaySceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7002A3A22B0240D8003DE179 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7002A3982B022C77003DE179 /* RadioListPresent.swift */,
+				7002A39F2B023706003DE179 /* RadioListCellUI.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +224,11 @@
 				12535E902AFA84E200876AD6 /* RadioListViewController.swift in Sources */,
 				12535E992AFB855000876AD6 /* RadioListCell.swift in Sources */,
 				12535E9C2AFBC82C00876AD6 /* Notification.swift in Sources */,
+				7002A3A02B023706003DE179 /* RadioListCellUI.swift in Sources */,
 				12566B5B2AFA28A5005CD267 /* Radio.swift in Sources */,
 				12566B5D2AFA2912005CD267 /* DataManager.swift in Sources */,
 				122BEB382AF92C49000744D5 /* AppDelegate.swift in Sources */,
+				7002A3992B022C77003DE179 /* RadioListPresent.swift in Sources */,
 				122BEB512AF93107000744D5 /* CarPlaySceneDelegate.swift in Sources */,
 				122BEB3A2AF92C49000744D5 /* SceneDelegate.swift in Sources */,
 			);
