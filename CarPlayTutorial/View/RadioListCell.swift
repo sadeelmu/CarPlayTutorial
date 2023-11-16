@@ -48,6 +48,7 @@ class RadioListCell: UITableViewCell {
         
         guard let radioIndexPath = radioIndexPath else {return} 
         radioDelegate?.favoriteButtonSelected(radioIndexPath)
+        //here we have to send back the isfavorite
     }
 }
 

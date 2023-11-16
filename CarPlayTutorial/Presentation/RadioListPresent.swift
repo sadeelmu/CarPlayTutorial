@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 //lets define a protocol
 //cause every layer defines a protocol for the layer before it
@@ -27,9 +28,17 @@ class RadioListPresent: RadioListPresentProtocol{
     
     func getRadio(completionHandler: ([RadioListItemUI]?) -> Void) {
         //call dataManager and get the radios.
-        //you need to map the data to RadioListItemUI
-        //and return the data to view
         //save the Radios gotten from the dataManager onto our local radios variable defined above
+        DataManager.shared.getRadios(completionHandler: {savedRadios in
+            radios = savedRadios ?? []
+        })
+                
+        //you need to map the data to RadioListItemUI
+        var radioItem:[RadioListItemUI] = radios.map{radio in
+            return RadioListItemUI(radioTitle: radio.title, radioSubtitle: radio.subtitle, radioImageView: UIImage(imageLiteralResourceName: radio.imageUrl), radioIsFavorite: radio.isFavorited ?? false)
+        }
+        //and return the data to view
+        return completionHandler(radioItem)
     }
     
     func favoriteButtonSelected(_ index: Int) {

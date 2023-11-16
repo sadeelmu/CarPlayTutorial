@@ -29,6 +29,7 @@ class DataManager{
             favoriteRadios.removeAll(where: {$0.uid == radio.uid})
         }else{
             favoriteRadios.append(radio)
+            //set the isFavorited optinal value to true
         }
     }
     

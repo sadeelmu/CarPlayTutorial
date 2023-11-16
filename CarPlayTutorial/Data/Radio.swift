@@ -17,4 +17,5 @@ struct Radio:Decodable{
     let audioUrl:String
     let linkUrl:String
     let wikipediaUrl:String
+    let isFavorited:Bool?
 }
